@@ -22,5 +22,4 @@ Plain static site, no build step. Netlify publishes the repository root (see net
 - No cut-out photos of Monika (they looked artificial).
 
 ## Open
-- Impressum: name the Gesundheitsamt that granted the Heilpraktiker licence (placeholder).
 - Check licences of the stock images (hands, doors, wooden figures, IFS head illustration).
