@@ -1,6 +1,8 @@
 # ifs-therapy.com: website of Monika Riese
 
-Plain static site, no build step. Netlify publishes the repository root (see netlify.toml). Domain www.ifs-therapy.com is registered at GoDaddy; only the A record (@) and the CNAME (www) point to Netlify. Never touch the email records (MX, TXT etc.).
+Plain static site, no build step. Cloudflare Pages publishes the repository root on every push to main (no build command, output directory "/"); security headers live in _headers. Domain ifs-therapy.com is registered at GoDaddy, DNS is managed by Cloudflare. Main address is www.ifs-therapy.com; ifs-therapy.com redirects there. Never touch email records (MX, TXT etc.).
+Netlify was used first but its free plan only allows about 20 deploys a month (shared with riese.com); it is no longer used for this site.
+Batch changes: commit locally and push once per round of edits.
 
 ## Files
 - index.html: the whole one-page site in English
