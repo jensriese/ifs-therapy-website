@@ -1,12 +1,6 @@
 [build]
   publish = "."
 
-[[redirects]]
-  from = "https://ifs-therapy.com/*"
-  to = "https://www.ifs-therapy.com/:splat"
-  status = 301
-  force = true
-
 [[headers]]
   for = "/*"
   [headers.values]
