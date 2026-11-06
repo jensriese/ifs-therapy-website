@@ -216,3 +216,18 @@ footer a:hover{color:var(--espresso)}
   .feature .feature-img.mobile-only{display:block;min-height:0;aspect-ratio:4/3;margin:4px 0 6px}
   .feature > .feature-img{display:none}
 }
+/* Menu links grouped; on phones they get their own row that scrolls sideways */
+.nav-links{display:flex;align-items:center;gap:4px 26px;flex-wrap:wrap}
+.nav-links a{text-decoration:none;color:var(--text);padding:6px 0}
+.nav-links a:hover{color:var(--espresso)}
+@media (max-width:900px){.nav-links{gap:4px 18px}}
+@media (max-width:560px){
+  .site-head .wrap{flex-wrap:wrap;justify-content:flex-start;column-gap:12px;row-gap:0;padding-block:8px 4px}
+  .site-head .nav{display:contents}
+  .site-head .mark{order:0;flex:1;font-size:1.35rem}
+  .site-head .lang{order:1}
+  .site-head .nav a.pill{order:2;padding:8px 13px;font-size:.7rem;letter-spacing:.1em}
+  .site-head .nav-links{order:3;flex-basis:100%;flex-wrap:wrap;gap:0 15px;font-size:.66rem;letter-spacing:.08em;padding:2px 0}
+  .site-head .nav-links a{white-space:nowrap}
+}
+@media (max-width:560px){html{scroll-padding-top:120px}}
