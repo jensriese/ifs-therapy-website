@@ -210,3 +210,9 @@ footer a:hover{color:var(--espresso)}
 .nav .lang a{padding:6px 2px;color:var(--text);text-decoration:none;border-bottom:1px solid transparent}
 .nav .lang a[aria-current]{color:var(--green);border-bottom-color:var(--gold)}
 .nav .lang a:hover{color:var(--green)}
+/* Constellations image: under the heading on phones, beside the text on desktop */
+.feature .feature-img.mobile-only{display:none}
+@media (max-width:900px){
+  .feature .feature-img.mobile-only{display:block;min-height:0;aspect-ratio:4/3;margin:4px 0 6px}
+  .feature > .feature-img{display:none}
+}
