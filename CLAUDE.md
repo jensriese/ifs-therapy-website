@@ -3,8 +3,10 @@
 Plain static site, no build step. Netlify publishes the repository root (see netlify.toml). Domain www.ifs-therapy.com is registered at GoDaddy; only the A record (@) and the CNAME (www) point to Netlify. Never touch the email records (MX, TXT etc.).
 
 ## Files
-- index.html: the whole one-page site (English; German version to follow)
-- impressum.html, privacy.html: legal pages
+- index.html: the whole one-page site in English
+- impressum.html, privacy.html: English legal pages
+- de/index.html, de/impressum.html, de/datenschutz.html: German versions (formal "Sie"); paths use ../
+- Every page has an EN · DE switch in the header. Keep both languages in sync: any content change goes into both index.html and de/index.html.
 - site.css: all styles
 - fonts/: self-hosted Cormorant Garamond and Jost (no Google requests; the privacy page says so)
 - img/: images
