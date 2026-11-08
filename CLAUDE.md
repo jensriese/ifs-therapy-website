@@ -11,7 +11,14 @@ Batch changes: commit locally and push once per round of edits.
 - Every page has an EN · DE switch in the header. Keep both languages in sync: any content change goes into both index.html and de/index.html.
 - site.css: all styles
 - fonts/: self-hosted Cormorant Garamond and Jost (no Google requests; the privacy page says so)
-- img/: images
+- img/: images (img/og-image.jpg is the 1200x630 preview image for Google/social sharing)
+- favicon.ico, favicon-48.png, apple-touch-icon.png, icon-512.png: site icons ("M" monogram)
+- sitemap.xml, robots.txt: for search engines. Update <lastmod> in sitemap.xml when content changes.
+
+## SEO
+- Internal links use clean URLs (./, de/, impressum, privacy, de/datenschutz); Cloudflare strips .html.
+- Each homepage has a title, meta description, Open Graph tags, hreflang (de, en, x-default = English) and JSON-LD (Person, ProfessionalService/MedicalBusiness, WebSite). Keep EN and DE in sync when changing them.
+- Target searches: IFS-Therapie / IFS Therapeutin, Paartherapie, Familienaufstellung, in München, Schliersee (Landkreis Miesbach) and online; in English: English-speaking IFS therapist / couples therapy in Munich.
 
 ## Rules
 - Design must stay clearly different from riese.com (Jens's site): light, warm, feminine; no dark sections.
